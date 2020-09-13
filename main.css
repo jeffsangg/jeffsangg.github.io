@@ -1,0 +1,551 @@
+html, body
+{
+    height: 100%;
+    font-size: 16px;
+}
+
+body
+{
+    margin: 2rem;
+    padding: 2rem;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+header {
+    padding: 1.5rem 0;
+  }
+
+
+
+h1, h2, h3 {
+      margin: 0;
+      padding: 0;
+  }
+
+    
+h1  {
+    font-weight: 600;
+    text-align: center;
+  }
+
+
+p, ol, ul
+{
+    margin-top: 0;
+}
+
+ol, ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+p
+{
+    line-height: 180%;
+}
+
+a
+{
+    color: #000000;
+}
+
+a:hover
+{
+    text-decoration: dotted;
+    text-decoration-color: red;
+}
+
+
+
+.container
+{
+    margin: 0rem auto;
+    position: relative;
+    width: 75%;
+    max-width: 75%;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+  }  
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    opacity: 50%;
+  }
+  
+.container2:hover .overlay {
+    height: 100%;
+  }
+  
+.text {
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+
+  /* for responsive grid columns */
+
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0rem auto;
+    position: relative;
+    width: 75%;
+    max-width: 75%;
+  }
+  
+
+  .column {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 1rem;
+  }
+  
+  .column img {
+    margin-bottom: 2rem;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of three columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+img {
+	width:auto;
+	max-width:100%;
+    height:auto;
+
+}
+
+.image
+{
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,.1);
+
+}
+
+.image img
+{
+    display: block;
+    width: 100%;
+}
+
+.image-full
+{
+    display: block;
+    width: 100%;
+    margin: 0 0 3em 0;
+}
+
+.image-left
+{
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+    margin: 0 auto;
+    width: auto;
+}
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+ul.contact
+{
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+
+ul.contact li
+{
+    display: inline-block;
+    padding: 0em 0.30em;
+    font-size: 1.2em;
+}
+
+ul.contact li span
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.contact li a
+{
+    color: #FFF;
+}
+
+ul.contact li a:before
+{
+    display: inline-block;
+    background: #333333;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1em 2em 1em 2em;
+    background: #444444;
+    letter-spacing: 0.20em;
+    line-height: 1.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #FFF;
+}
+
+.button:before
+{
+    display: inline-block;
+    background: #e09d9d;
+    margin-right: 1em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #272925;
+}
+
+.button-small
+{
+    padding: 0.9em 2em;
+    line-height: 1.8em;
+    font-size: 1em;
+}
+    
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title
+{
+    margin-bottom: 3em;
+}
+
+.title h2
+{
+    font-size: 2.8em;
+    color: rgba(255,255,255,0.9);
+}
+
+.title .byline
+{
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #6F6F6F;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper
+{
+    padding: 0em 0em;
+}
+
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+    padding: 5em 0em;
+    text-align: center;
+}
+
+#logo h1
+{
+    font-size: 3.5em;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#logo span
+{
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+    color: rgba(255,255,255,0.5);
+}
+
+#logo span a
+{
+    color: rgba(255,255,255,0.8);
+}
+
+#logo .icon
+{
+    font-size: 4em;
+    color: rgba(255,255,255,1);
+}
+
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu
+{
+    width: 80%;
+    margin: 0px auto;
+}
+
+#menu ul
+{
+    text-align: center;
+}
+
+#menu li
+{
+    display: inline-block;
+}
+
+#menu li a, #menu li span
+{
+    display: inline-block;
+    margin-left: 0.50em;
+    padding: 1.5em 1.5em;
+    letter-spacing: 0.20em;
+    text-decoration: none;
+    font-size: 0.90em;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: 0;
+    color: rgb(0, 0, 0);
+}
+
+
+#menu .current_page_item a
+{
+    color: rgb(0, 0, 0);
+}
+
+
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+#wrapper1
+{
+    background: #242424;
+}
+
+#wrapper2
+{
+    background: #EDEDED;
+}
+
+#wrapper3
+{
+    overflow: hidden;
+    padding: 8em 0em;
+    background: #FFF;
+}
+
+#wrapper4
+{
+    overflow: hidden;
+    padding: 8em 0em;
+    background: #939E77;
+}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+#welcome
+{
+    overflow: hidden;
+    padding: 8em 0em;
+    text-align: center;
+    color: rgba(255,255,255,0.3);
+}
+
+#welcome .content
+{
+    padding: 0em 8em;
+}
+
+
+
+#welcome a,
+#welcome strong
+{
+    color: rgba(255,255,255,0.6);
+}
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+footer {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  
+  footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer li img {
+    width: 32px;
+    height: 32px;
+  }
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+#copyright
+{
+    overflow: hidden;
+    padding: 5em 0em;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+#copyright p
+{
+    letter-spacing: 0.20em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    color: rgba(255,255,255,0.3);
+}
+
+#copyright a
+{
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+}
+
+/*********************************************************************************/
+/* Newsletter                                                                    */
+/*********************************************************************************/
+
+#newsletter
+{
+    overflow: hidden;
+    padding: 8em 0em;
+    background: #EDEDED;
+    text-align: center;
+}
+
+#newsletter .title h2
+{
+    color: rgba(0,0,0,0.8);
+}
+
+#newsletter .content
+{
+    width: 600px;
+    margin: 0px auto;
+}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+#portfolio .box
+{
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+}
+
+#portfolio h3
+{
+    display: block;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: rgba(0,0,0,0.6);
+}
+
+#portfolio .title
+{
+    text-align: center;
+}
+
+#portfolio .title h2
+{
+    color: rgba(0,0,0,0.8);
+}
